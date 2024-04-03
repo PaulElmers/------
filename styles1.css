@@ -1,0 +1,48 @@
+* {
+    background-color: azure;
+  }
+  .stylec {
+    background:rgb(170, 0, 255);
+    position: relative;
+  }
+  .time {
+    border: 5px solid rgb(170, 0, 255);
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+  }
+  .center {
+    top: 255px;
+    left: 237px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+  }
+  .hour {
+    height: 175px;
+    top: -125px;
+    left: 240px;
+    animation-duration: 150s;
+  }
+  .minute {
+    height: 200px;
+    top: 50px;
+    left: 240px;
+    animation-duration: 3s;
+  }
+  .hour,
+  .minute {
+    width: 5px;
+    transform-origin: bottom;
+    animation-name: Anim;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes Anim {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

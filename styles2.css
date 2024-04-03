@@ -1,0 +1,45 @@
+*{
+background-color: azure;
+}
+
+.sashes{
+    width: fit-content;
+    position: absolute;
+    perspective: 600px;
+    margin: 50px;
+}
+
+.hidden_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    z-index: -1;
+}
+
+.sashe{
+    float: left;
+    width: 400px;
+    height: 250px;
+    background-color: pink;
+    border: 5px solid darkmagenta;
+    transition-duration: 2s;
+}
+
+.left{
+    transform-origin: left;
+}
+
+.right{
+    transform-origin: right;
+}
+
+.sashes:hover .right{
+    transform: rotateY(-60deg);
+}
+
+.sashes:hover .left{
+    transform: rotateY(60deg);
+}
